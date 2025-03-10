@@ -1,6 +1,6 @@
 
-import { AuthOptions, NextAuthOptions, Session, User } from "next-auth";
-import { JWT } from "next-auth/jwt";
+import { AuthOptions } from "next-auth";
+
 import CredentialsProvider from "next-auth/providers/credentials";
 
 export const authOptions: AuthOptions = {

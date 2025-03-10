@@ -2,7 +2,7 @@ import { authOptions } from "@/lib/AuthOptions";
 import { getAccessToken, VerifyToken } from "@/store/store";
 
 import { getServerSession } from "next-auth";
-import { getSession } from "next-auth/react";
+
 import { NextRequest, NextResponse } from "next/server"
 
 export async function POST(req: NextRequest) {
