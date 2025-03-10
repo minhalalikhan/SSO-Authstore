@@ -9,7 +9,7 @@ This app is a demo AuthStore app which is used to demonstrate SSO login function
 - [App1]()
 
 
-**## How to use**
+## How to use
 
 - clone this repo
 - clone the App1 repo
@@ -19,7 +19,7 @@ This app is a demo AuthStore app which is used to demonstrate SSO login function
 -   click on SignIn with AuthStore
 -   Login to AuthStore if not already signedIn
 
-**## Env File**
+## Env File
 
 ```
 NEXTAUTH_SECRET='any secret key here'
