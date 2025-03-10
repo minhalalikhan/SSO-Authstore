@@ -4,5 +4,11 @@ import NextAuth from "next-auth/next";
 
 const Handler = NextAuth(authOptions)
 
-export const GET = Handler
-export const POST = Handler
+export async function GET(request: Request) {
+    return Handler(request);
+}
+
+// Define the POST method
+export async function POST(request: Request) {
+    return Handler(request);
+}

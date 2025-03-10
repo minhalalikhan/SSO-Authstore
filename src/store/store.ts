@@ -1,14 +1,14 @@
 type SSOapp = {
     ID: string,
     KEY: string,
-    DATA: any,
+
 }
 
 
 
 const AppDB: SSOapp[] = [
-    { ID: '1234', KEY: 'app1@5832', DATA: {} },
-    { ID: '9851', KEY: 'app2@8103', DATA: {} }
+    { ID: '1234', KEY: 'app1@5832', },
+    { ID: '9851', KEY: 'app2@8103', }
 ]
 
 type userAuthCodes = SSOapp & { userEmail: string, authcode: string }

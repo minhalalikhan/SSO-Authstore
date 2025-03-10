@@ -43,13 +43,13 @@ export const authOptions: AuthOptions = {
         },
     },
     callbacks: {
-        async jwt({ token, user }) {
+        async jwt({ token }) {
 
 
 
             return token
         },
-        async session({ session, token }) {
+        async session({ session }) {
 
 
 

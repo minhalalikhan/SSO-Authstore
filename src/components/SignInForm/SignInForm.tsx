@@ -9,14 +9,13 @@ import * as yup from 'yup'
 import { useSearchParams } from 'next/navigation'
 
 
-type Props = {}
 
 const Schema = yup.object().shape({
     email: yup.string().min(6, 'min email length is 6 characters').required(),
     password: yup.string().min(6, 'min pass length is 6 characters').required()
 })
 
-function SignInForm({ }: Props) {
+function SignInForm() {
 
     const { data, status } = useSession()
 
@@ -59,8 +58,8 @@ function SignInForm({ }: Props) {
                 else setError('')
             }
 
-        } catch (err: any) {
-            if (err?.name === 'ValidationError') {
+        } catch (err: unknown) {
+            if (err instanceof Error && err?.name === 'ValidationError') {
                 setError(err.message); // Set validation error message
             }
 
@@ -90,7 +89,7 @@ function SignInForm({ }: Props) {
                 '_self'
             )
         } catch (err) {
-
+            console.log('err occured', err)
         }
     }
 

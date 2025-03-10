@@ -30,7 +30,7 @@ export async function POST(req: NextRequest) {
     // return NextResponse.json({ ...result }, { status: 200 })
 }
 
-export async function GET(req: NextRequest, res: NextResponse) {
+export async function GET(req: NextRequest) {
     //  get access token
     const session = await getServerSession(authOptions)
     if (!session) {

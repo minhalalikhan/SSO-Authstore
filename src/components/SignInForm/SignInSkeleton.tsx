@@ -1,13 +1,13 @@
 import React from 'react'
 import { Skeleton } from '../ui/skeleton'
 
-type Props = {}
 
-function SignInSkeleton({ }: Props) {
+
+function SignInSkeleton() {
     return (
-        <div className=''>
-            <Skeleton className=' w-full' />
-            <Skeleton className=' w-full' />
+        <div className='w-[600px] max-w-full'>
+            <Skeleton className=' w-full h-[50px]' />
+            <Skeleton className=' w-full h-[50px]' />
         </div>
     )
 }
