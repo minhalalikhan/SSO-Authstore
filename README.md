@@ -24,7 +24,4 @@ This app is a demo AuthStore app which is used to demonstrate SSO login function
 ```
 NEXTAUTH_SECRET='any secret key here'
 
-!! current domain and port of the app
-NEXTAUTH_URL='http://localhost:3000'
-
 ```
